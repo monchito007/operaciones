@@ -1,0 +1,26 @@
+SELECT a.fecha, a.operacion, b.estado, c.comentario, c.fecha
+FROM operaciones as a
+LEFT JOIN estados B ON a.id_estado=b.id
+LEFT JOIN seguimientos C ON a.id=c.id_operacion AND c.fecha=(SELECT MAX(d.fecha) FROM seguimientos D WHERE a.id=d.id_operacion) 
+GROUP BY a.id
+
+SELECT a.id, a.fecha, a.operacion, b.estado, c.comentario, c.fecha 
+FROM operaciones as a 
+LEFT JOIN estados B ON a.id_estado=b.id 
+LEFT JOIN seguimientos C ON a.id=c.id_operacion AND c.fecha=(SELECT MAX(d.fecha) FROM seguimientos D WHERE a.id=d.id_operacion) 
+WHERE a.activa=0 
+AND (a.fecha like '%armando%' OR a.operacion like '%armando%' OR b.estado like '%armando%' OR c.comentario like '%armando%' OR c.fecha like '%armando%' OR a.operacion like '%armando%')
+GROUP BY a.id 
+ORDER BY a.fecha DESC
+
+SELECT a.fecha, a.operacion, b.estado 
+FROM operaciones as a, estados as b 
+WHERE a.id_estado=b.id
+AND a.id=1
+
+SELECT a.id, a.fecha, a.operacion, b.estado, c.comentario, c.fecha
+FROM operaciones as a, estados as b
+LEFT JOIN seguimientos C ON a.id=c.id_operacion AND c.fecha=(SELECT MAX(d.fecha) FROM seguimientos D WHERE a.id=d.id_operacion) 
+WHERE a.id_estado=b.id AND a.activa=1
+GROUP BY a.id 
+ORDER BY a.fecha ASC

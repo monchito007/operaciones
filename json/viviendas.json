@@ -1,0 +1,9 @@
+[{"id":1, "id_tipo_de_vivienda":1, "vivienda":"vivienda aislada"},
+ {"id":2, "id_tipo_de_vivienda":1, "vivienda":"vivienda pareada"},
+ {"id":3, "id_tipo_de_vivienda":1, "vivienda":"vivienda adosada"},
+ {"id":4, "id_tipo_de_vivienda":2, "vivienda":"apartamento"},
+ {"id":5, "id_tipo_de_vivienda":2, "vivienda":"estudio"},
+ {"id":6, "id_tipo_de_vivienda":2, "vivienda":"d\u00faplex"},
+ {"id":7, "id_tipo_de_vivienda":2, "vivienda":"\u00e1tico"},
+ {"id":8, "id_tipo_de_vivienda":2, "vivienda":"piso"},
+ {"id":9, "id_tipo_de_vivienda":2, "vivienda":"bajo con jard\u00edn"}]

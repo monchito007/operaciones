@@ -1,0 +1,129 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 5 oct 2022, 9:26:01
+    Author     : Desktop02
+*/
+body{
+    background-image: url("../images/bg.jpg"); 
+}
+.sidebar{
+    background-color: dodgerblue;
+}
+#content{
+   background-color: #gggggg;
+   margin: 20px;               
+}
+::placeholder {
+    font-style: italic;
+    color: #cacaca;
+}
+input[type=text]{
+    width: 250px;
+}
+select{
+    width: 250px;
+
+}
+nav{
+    background-color: #0275d8;
+}
+form{
+    padding: 25px 0 0 25px;
+}
+input[type="submit"]{
+    margin: 10px 0;
+}
+#notas input[type="submit"]{
+    margin: 0px 10px 10px;
+}
+textarea {
+    width: 95%;
+    height: 200px;
+}
+li a{
+    color: white;
+}
+.activa{
+    color: green;
+}            
+.inactiva{
+    color: #cc0000;
+}
+.cont{
+    color: #cc0000;
+}
+footer p{
+    font-size: 12px;
+    color: #999999;
+    text-align: center;
+    font-style: italic;
+}
+input{
+    background-color: white;
+}
+.errores{
+    color: #cc0000;
+    font-style: italic;
+    font-size: 14px;
+}
+#seguimiento{
+    width: 100%;
+    float: left;
+}
+#comentarios{
+    width: 70%;
+    float: left;
+}
+#form_seguimiento{
+    width: 30%;
+    float: right;
+    background-color: #f8f8f8;
+}
+#detalles_operacion{
+    width: 70%;
+    float: left;
+}
+#notas{
+    width: 30%;
+    float: right;
+    background-color: #fafccd;
+    margin: 0px;
+    box-shadow: 3px 3px 5px grey;
+}
+#notas table{
+    width: 90%;
+}
+#notas table th{
+    vertical-align: top;
+}
+.notas{
+    margin: 25px;
+}
+footer{
+    margin-top: 100px;
+    float: left;
+    width: 100%;
+}
+table{
+    width: 100%;
+}
+#login {
+    margin: 10% auto;
+    height: 240px;
+    width: 420px;                
+    background-color: #EEE;
+    /*display: inline-table;*/
+    box-shadow: 5px 5px 5px gray;
+}
+#login h2{
+    padding: 25px 0 0 25px;
+}
+#login tabla_login{
+    width: 95%;
+}
+#login input{
+    width: 90%;
+}

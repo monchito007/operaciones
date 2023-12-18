@@ -1,0 +1,13 @@
+SELECT a.id, a.fecha, a.operacion, b.estado, c.comentario, c.fecha 
+FROM operaciones as a, estados as b, seguimientos as c 
+WHERE a.id_estado=b.id AND c.fecha=(SELECT MAX(c.fecha) FROM seguimientos as c, operaciones as a WHERE a.id=c.id_operacion) 
+AND a.activa=1 
+GROUP BY a.id 
+ORDER BY a.fecha ASC
+
+Type -> array
+Result -> 1
+
+
+Type -> NULL
+Result -> 1
